@@ -1,0 +1,143 @@
+==================== 2026-11-17T14:31:00.273844Z | 01a1e9eb-15ac-7512-9d4b-ab36b5c93885 ====================
+14:31:00.274313 [info ]: Installing dbt project and profile setup
+14:31:00.324994 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+14:31:00.325666 [info ]: Success Project created successfully!
+14:31:00.325971 [info ]: Info Project name: jaffle_shop
+14:31:00.326242 [info ]: Info Project directory: jaffle_shop
+14:31:01.504348 [info ]: Info Setting up your profile...
+14:31:01.505385 [info ]: Loading ~/.dbt/profiles.yml
+14:31:01.510552 [info ]: Profile 'jaffle_shop' already exists. You can choose how to proceed.
+14:31:08.970583 [info ]: Info Profile setup cancelled.
+14:31:08.970964 [info ]: Validating profile inputs, adapters, and connection
+
+14:31:08.971231 [info ]: dbt-oss 2.0.11
+14:31:08.971935 [info ]: Started loading project
+14:31:08.975182 [info ]: Loading ~/.dbt/profiles.yml
+14:31:08.977428 [info ]: Finished loading project [  0.01s]
+14:31:08.978089 [info ]: Started debugging
+14:31:08.978340 [info ]: Debugging profile: dev
+14:31:08.978583 [info ]: Debugging dbt version: 2.0.11
+14:31:08.978803 [info ]: Debugging platform: windows x86_64 (windows)
+14:31:08.979037 [info ]: Debugging adapter type: bigquery (remote)
+14:31:09.070445 [info ]: Debugging dependencies:
+  git: OK
+14:31:09.071608 [info ]: Debugging connection:
+  "database": "cedar-turbine-511010-d3",
+  "schema": "stylehub_ap_bronze",
+  "method": "service-account",
+  "location": "asian southeast1",
+  "dataproc_batch": null
+14:31:09.073138 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+14:31:09.133088 [debug]: borrow_tlocal_connection() took 60.3194ms
+14:31:09.137936 [debug]: create_debug_span(...).entered() took 129.1µs
+14:31:09.625614 [debug]: Query executed on node unknown:
+select 1 as id
+14:31:10.626279 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 1.4930984s
+14:31:10.626535 [info ]: Debugging connection test: ERROR
+14:31:10.627679 [info ]: Finished debugging [  1.65s]
+14:31:10.628185 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the database configured for the `bigquery` adapter.
+The following error was returned:
+
+[BigQuery] googleapi: Error 400: Location asian southeast1 does not support this operation., badRequest
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+14:31:10.884382 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [10.6s]
+==================== 2026-11-17T14:31:41.705900Z | 01a1e9eb-b785-77e7-86c5-666d450a872d ====================
+14:31:41.706403 [info ]: Installing dbt project and profile setup
+14:31:41.757331 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+14:31:41.757960 [info ]: Success Project created successfully!
+14:31:41.758275 [info ]: Info Project name: jaffle_shop
+14:31:41.758499 [info ]: Info Project directory: jaffle_shop
+14:31:43.398669 [info ]: Info Setting up your profile...
+14:31:43.399933 [info ]: Loading ~/.dbt/profiles.yml
+14:31:43.401792 [info ]: Profile 'jaffle_shop' already exists. You can choose how to proceed.
+14:31:48.313817 [info ]: Info Creating new profile...
+14:32:12.556176 [info ]: Info Backup created at C:\Users\MINH PHUC\.dbt\profiles.yml.bkp
+14:32:12.557588 [info ]: Success Profile written to C:\Users\MINH PHUC\.dbt\profiles.yml
+14:32:12.557959 [info ]: Validating profile inputs, adapters, and connection
+
+14:32:12.558691 [info ]: dbt-oss 2.0.11
+14:32:12.559616 [info ]: Started loading project
+14:32:12.563273 [info ]: Loading ~/.dbt/profiles.yml
+14:32:12.587225 [info ]: Finished loading project [  0.03s]
+14:32:12.587676 [info ]: Started debugging
+14:32:12.588035 [info ]: Debugging profile: dev
+14:32:12.588665 [info ]: Debugging dbt version: 2.0.11
+14:32:12.589205 [info ]: Debugging platform: windows x86_64 (windows)
+14:32:12.589633 [info ]: Debugging adapter type: bigquery (remote)
+14:32:12.675479 [info ]: Debugging dependencies:
+  git: OK
+14:32:12.676439 [info ]: Debugging connection:
+  "database": "cedar-turbine-511010-d3",
+  "schema": "stylehub_ap_bronze",
+  "method": "service-account",
+  "location": "asia-southeast1",
+  "dataproc_batch": null
+14:32:12.678030 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+14:32:12.728966 [debug]: borrow_tlocal_connection() took 51.2575ms
+14:32:12.732682 [debug]: create_debug_span(...).entered() took 75µs
+14:32:16.922465 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.1896242s
+14:32:16.922514 [debug]: reader.schema() took 600ns
+14:32:17.146598 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.413859s
+14:32:17.146749 [debug]: concat_batches + normalize_result_column_names took 92.5µs
+14:32:17.146806 [debug]: record_current_span_status_from_attrs took 30.7µs
+14:32:17.146839 [debug]: Query executed on node unknown:
+select 1 as id
+14:32:17.146893 [debug]: drop(query_span_guard) (span exit/export) took 68.4µs
+14:32:17.147223 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.4182105s
+14:32:17.147300 [info ]: Debugging connection test: OK (4.5s)
+14:32:17.148362 [info ]: Debugged All checks passed!
+14:32:17.148961 [info ]: Finished debugging [  4.56s]
+14:32:18.879447 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [37.2s]
+==================== 2026-11-17T14:37:22.641146Z | 01a1e9f0-eb4b-748e-a4d6-81bb0081c092 ====================
+14:37:22.641594 [info ]: Installing dbt project and profile setup
+14:37:22.701676 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+14:37:22.702394 [info ]: Success Project created successfully!
+14:37:22.702750 [info ]: Info Project name: stylehub_dbt
+14:37:22.703065 [info ]: Info Project directory: stylehub_dbt
+14:37:24.665449 [info ]: Info Setting up your profile...
+14:37:24.666550 [info ]: Loading ~/.dbt/profiles.yml
+14:37:24.668203 [info ]: Info Creating new profile...
+14:38:13.635995 [info ]: Success Profile written to C:\Users\MINH PHUC\.dbt\profiles.yml
+14:38:13.636392 [info ]: Validating profile inputs, adapters, and connection
+
+14:38:13.636610 [info ]: dbt-oss 2.0.11
+14:38:13.637227 [info ]: Started loading project
+14:38:13.640223 [info ]: Loading ~/.dbt/profiles.yml
+14:38:13.662141 [info ]: Finished loading project [  0.02s]
+14:38:13.662755 [info ]: Started debugging
+14:38:13.662997 [info ]: Debugging profile: dev
+14:38:13.663277 [info ]: Debugging dbt version: 2.0.11
+14:38:13.663554 [info ]: Debugging platform: windows x86_64 (windows)
+14:38:13.663925 [info ]: Debugging adapter type: bigquery (remote)
+14:38:13.753481 [info ]: Debugging dependencies:
+  git: OK
+14:38:13.754403 [info ]: Debugging connection:
+  "database": "cedar-turbine-511010-d3",
+  "schema": "stylehub_ap_bronze",
+  "method": "service-account",
+  "location": "asia-southeast1",
+  "dataproc_batch": null
+14:38:13.755895 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+14:38:13.804044 [debug]: borrow_tlocal_connection() took 48.4909ms
+14:38:13.807477 [debug]: create_debug_span(...).entered() took 77.7µs
+14:38:15.803550 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.9959159s
+14:38:15.803596 [debug]: reader.schema() took 600ns
+14:38:16.024934 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.2173792s
+14:38:16.025170 [debug]: concat_batches + normalize_result_column_names took 154.5µs
+14:38:16.025278 [debug]: record_current_span_status_from_attrs took 56.5µs
+14:38:16.025340 [debug]: Query executed on node unknown:
+select 1 as id
+14:38:16.025479 [debug]: drop(query_span_guard) (span exit/export) took 161.2µs
+14:38:16.025905 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 2.2218127s
+14:38:16.025997 [info ]: Debugging connection test: OK (2.3s)
+14:38:16.027453 [info ]: Debugged All checks passed!
+14:38:16.028431 [info ]: Finished debugging [  2.37s]
+14:38:16.700911 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [54.1s]

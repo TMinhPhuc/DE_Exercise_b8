@@ -1,0 +1,26 @@
+# HTTP
+requests
+
+# Database
+sqlalchemy
+psycopg2-binary
+mysql-connector-python
+
+# Data
+pandas
+polars
+pyarrow
+openpyxl
+
+# dbt
+dbt-core
+dbt-postgres
+dbt-bigquery
+
+# Data quality
+great-expectations
+
+
+google-cloud-storage
+google-cloud-bigquery
+protobuf

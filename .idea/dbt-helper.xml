@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DbtHelperSettings">
+    <option name="activeTarget" value="dev" />
+    <option name="dbtExecutablePath" value="C:\CyberSoftDE\BT\DE_Exercise_b7\.venv\Scripts\dbt.exe" />
+  </component>
+</project>

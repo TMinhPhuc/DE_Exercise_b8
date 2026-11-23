@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: daily_revenue
+    description: Doanh thu theo ngày
+    columns:
+      - name: order_date
+        description: Ngày đặt hàng
+        data_type: 'datetime'
+      - name: total_orders
+        description: Tổng đơn hàng
+        data_type: 'integer'
+      - name: revenue
+        description: Doanh thu
+        data_type: 'float'

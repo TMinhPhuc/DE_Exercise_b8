@@ -1,0 +1,89 @@
+==================== 2026-11-17T15:15:26.540180Z | 01a1ea13-c4c7-760e-9e54-031ba2e37fa6 ====================
+15:15:26.540647 [info ]: Installing dbt project and profile setup
+15:15:26.586981 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+15:15:26.587794 [info ]: Success Project created successfully!
+15:15:26.588196 [info ]: Info Project name: stylehub_dbt
+15:15:26.588499 [info ]: Info Project directory: stylehub_dbt
+15:15:28.196704 [info ]: Info Setting up your profile...
+15:15:28.197827 [info ]: Loading ~/.dbt/profiles.yml
+15:15:28.199810 [info ]: Profile 'stylehub_dbt' already exists. You can choose how to proceed.
+15:15:29.571745 [info ]: Info Creating new profile...
+15:15:36.290349 [error]: [IoError (dbt1001)]: Profile setup cancelled
+15:15:36.512167 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [10.0s]
+==================== 2026-11-17T15:15:39.340343Z | 01a1ea13-f6c7-71d3-ab32-2183fe914197 ====================
+15:15:39.340787 [info ]: Installing dbt project and profile setup
+15:15:39.347560 [info ]: Warning Directory 'stylehub_dbt' already exists, using 'stylehub_dbt_1' instead
+15:15:39.395628 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+15:15:39.396593 [info ]: Success Project created successfully!
+15:15:39.397059 [info ]: Info Project name: stylehub_dbt_1
+15:15:39.397436 [info ]: Info Project directory: stylehub_dbt_1
+15:15:41.238663 [info ]: Info Setting up your profile...
+15:15:41.239821 [info ]: Loading ~/.dbt/profiles.yml
+15:15:41.242030 [info ]: Profile 'stylehub_dbt_1' already exists. You can choose how to proceed.
+15:15:42.315323 [info ]: Info Creating new profile...
+15:15:48.702952 [info ]: Info Backup created at C:\Users\MINH PHUC\.dbt\profiles.yml.bkp
+15:15:48.704385 [info ]: Success Profile written to C:\Users\MINH PHUC\.dbt\profiles.yml
+15:15:48.705075 [info ]: Validating profile inputs, adapters, and connection
+
+15:15:48.705392 [info ]: dbt-oss 2.0.11
+15:15:48.706218 [info ]: Started loading project
+15:15:48.709702 [info ]: Loading ~/.dbt/profiles.yml
+15:15:48.731460 [info ]: Finished loading project [  0.03s]
+15:15:48.731946 [info ]: Started debugging
+15:15:48.732248 [info ]: Debugging profile: dev
+15:15:48.732563 [info ]: Debugging dbt version: 2.0.11
+15:15:48.732819 [info ]: Debugging platform: windows x86_64 (windows)
+15:15:48.733064 [info ]: Debugging adapter type: bigquery (remote)
+15:15:48.819035 [info ]: Debugging dependencies:
+  git: OK
+15:15:48.819848 [info ]: Debugging connection:
+  "database": "cedar-turbine-511010-d3",
+  "schema": "stylehub-dbt",
+  "method": "service-account",
+  "location": "asian-sountheast1",
+  "dataproc_batch": null
+15:15:48.821477 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+15:15:48.891702 [debug]: borrow_tlocal_connection() took 70.5922ms
+15:15:48.895459 [debug]: create_debug_span(...).entered() took 77µs
+15:15:49.222556 [debug]: Query executed on node unknown:
+select 1 as id
+15:15:50.223102 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 1.3313302s
+15:15:50.223330 [info ]: Debugging connection test: ERROR
+15:15:50.224092 [info ]: Finished debugging [  1.49s]
+15:15:50.224495 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the database configured for the `bigquery` adapter.
+The following error was returned:
+
+[BigQuery] googleapi: Error 400: Location asian-sountheast1 does not support this operation., badRequest
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+15:15:50.456418 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [11.1s]
+==================== 2026-11-17T15:15:58.973002Z | 01a1ea14-4378-75d2-b51b-e0db3a9c2b27 ====================
+15:15:58.973470 [info ]: Installing dbt project and profile setup
+15:15:58.980145 [info ]: Warning Directory 'stylehub_dbt' already exists, using 'stylehub_dbt_2' instead
+15:15:59.039006 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+15:15:59.039684 [info ]: Success Project created successfully!
+15:15:59.040042 [info ]: Info Project name: stylehub_dbt_2
+15:15:59.040410 [info ]: Info Project directory: stylehub_dbt_2
+15:16:00.105417 [info ]: Info Setting up your profile...
+15:16:00.106776 [info ]: Loading ~/.dbt/profiles.yml
+15:16:00.109063 [info ]: Profile 'stylehub_dbt_2' already exists. You can choose how to proceed.
+15:16:01.080823 [info ]: Info Creating new profile...
+15:16:18.353134 [error]: [IoError (dbt1001)]: Profile setup cancelled
+15:16:19.033586 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [20.1s]
+==================== 2026-11-17T15:16:21.577187Z | 01a1ea14-9bc4-75c2-b75e-482b09fa9a3f ====================
+15:16:21.577691 [info ]: Installing dbt project and profile setup
+15:16:21.584174 [info ]: Warning Directory 'stylehub_dbt' already exists, using 'stylehub_dbt_3' instead
+15:16:21.640182 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+15:16:21.641025 [info ]: Success Project created successfully!
+15:16:21.641330 [info ]: Info Project name: stylehub_dbt_3
+15:16:21.641733 [info ]: Info Project directory: stylehub_dbt_3
+15:16:23.375305 [info ]: Info Setting up your profile...
+15:16:23.376613 [info ]: Loading ~/.dbt/profiles.yml
+15:16:23.378201 [info ]: Info Creating new profile...
