@@ -3,8 +3,21 @@ version: 2
 sources:
   - name: stylehub_bronze
     schema: stylehub_ab_bronze
+    config:
+      loaded_at_field: _airbyte_extracted_at
+      freshness:
+        warn_after:
+          period: day
+          count: 1
+        error_after:
+          period: day
+          count: 7
     tables:
       - name: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
       - name: order_items
       - name: products
       - name: shipments

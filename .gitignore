@@ -1,0 +1,10 @@
+# Chặn thư mục chứa key
+secrets/
+*.json
+.env
+api_key
+
+# Chặn môi trường ảo và thư mục tự sinh
+.venv/
+logs/
+deployments/
